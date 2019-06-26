@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Digital Market</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="re_enter_info">Username or Password is invalid, please enter again or register first</string>
+</resources>

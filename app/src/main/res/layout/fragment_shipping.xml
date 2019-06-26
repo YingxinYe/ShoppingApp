@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".fragments.ShippingFragment">
+
+    <TextView
+        android:id="@+id/shipping_text"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shipping Address" />
+
+    <EditText
+        android:id="@+id/shipping_name"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:hint="Please enter your name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/shipping_address"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter your address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/shipping_city"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter your city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/shipping_zip"
+        android:hint="Please enter your zip code"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/shipping_mobile"
+        android:hint="Please enter your mobile number"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/shipping_next_button"
+        android:text="Next"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

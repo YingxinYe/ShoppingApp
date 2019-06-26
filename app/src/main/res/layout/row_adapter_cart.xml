@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cart_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/cart_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/cart_image_view"
+        android:text="mobile" />
+
+    <Spinner
+        android:id="@+id/cart_quantity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cart_image_view"></Spinner>
+
+    <LinearLayout
+        android:id="@+id/quantity_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_quantity_spinner"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/cart_image_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Quantity: " />
+
+        <ImageView
+            android:id="@+id/icon_minus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/cart_image_view"
+            android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/cart_product_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/icon_minus"
+            android:text="1 pcs"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/icon_plus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/cart_quantity_spinner"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/cart_product_unit"
+            android:src="@drawable/ic_add_circle_outline_black_24dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cart_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="$100" />
+
+
+    <TextView
+        android:id="@+id/product_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cart_product_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Total Amount" />
+
+    <Button
+        android:id="@+id/cart_delete_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_total_price"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/oral_button"
+        android:drawableLeft="@drawable/ic_delete_black_24dp"
+
+        android:text="Delete" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/cart_image_view"
+        android:layout_marginTop="10dp"
+        android:background="#ccc" />
+
+</RelativeLayout>
